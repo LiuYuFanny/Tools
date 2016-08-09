@@ -1,14 +1,20 @@
-GGPTrunkDir = r'E:\GGP\trunk'
-GGPViewerDir = r'E:\GGP\trunk\Tools\GGPViewer'
-GGPProNDir = r'E:\GGP\branch\ProdN'
-GGPProMDir = r'E:\GGP\branch\ProdM'
+GGPTrunkDir = r'H:\GGP\trunk'
+GGPViewerDir = r'H:\GGP\trunk\Tools\GGPViewer'
+GGPProNDir = r'H:\GGP\ProdN'
+GGPProMDir = r'H:\GGP\ProdM'
+
 BIM5DDir = r'E:\BIM5D'
 BIM5DDir_V25 = r'E:\BIM5D_V2.5'
+
 GMBDir = r'E:\GMB_Version1'
-GQIDir = r'F:\GQI'
+
+GQIDir = r'H:\GQI'
 GQIGGP = r'F:\GQI\Externals\GBIM'
+
 GMPDir = r'F:\GMPT'
 GMPGGP = r'F:\GMPT\Externals\GBIM'
+
+TASDir = r'H:\TAS'
 
 pathMap = [
 	{
@@ -120,27 +126,10 @@ pathMap = [
 		'path' : 
 		[
 			('QTDIR', r'E:\Qt\Qt5.1.1\5.1.1\msvc2010_opengl'),
-            ('QTDIR_x64' , r'E:\Qt\Qt5.1.1\5.1.1\msvc2010_64_opengl'),
+            			('QTDIR_x64' , r'E:\Qt\Qt5.1.1\5.1.1\msvc2010_64_opengl'),
 			('Path', r'%QTDIR%\bin;%QTDIR_x64%\bin;%Path%;'),
 		],
 	},
-
-	{
-		'setting' :
-		{
-			'name' : 'GQIGGP',
-			'dir' : GQIGGP,
-			'sloution' : r'\Demos\ViewDemos\ViewDemos.sln',
-		},
-
-		'path' : 
-		[
-			('QTDIR', r'E:\Qt\Qt5.1.1\5.1.1\msvc2010_opengl'),
-			('QTDIR_x64' , r'E:\Qt\Qt5.1.1\5.1.1\msvc2010_64_opengl'),
-			('Path', r'%QTDIR%\bin;%QTDIR_x64%\bin;%Path%;'),
-		],
-	},
-
 
 	{
 		'setting' :
@@ -152,6 +141,7 @@ pathMap = [
 
 		'path' : 
 		[
+			('GGPDIR', GGPProMDir),
 			('QTDIR', r'E:\Qt\Qt5.1.1\5.1.1\msvc2010_opengl'),
 			('Path', r'%QTDIR%\bin;%Path%;'),
 		],
@@ -184,6 +174,22 @@ pathMap = [
 
 		'path' : 
 		[
+			('QTDIR', r'E:\Qt\Qt5.1.1\5.1.1\msvc2010_opengl'),
+			('Path', r'%QTDIR%\bin;%Path%;'),
+		],
+	},
+
+	{
+		'setting' :
+		{
+			'name' : 'TAS',
+			'dir' : TASDir,
+			'sloution' : r'\GCL\src\TAS.sln',
+		},
+
+		'path' : 
+		[
+			('GGPDIR', GGPProMDir),
 			('QTDIR', r'E:\Qt\Qt5.1.1\5.1.1\msvc2010_opengl'),
 			('Path', r'%QTDIR%\bin;%Path%;'),
 		],
